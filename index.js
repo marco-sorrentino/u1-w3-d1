@@ -162,10 +162,9 @@ e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function giveMeRandom(x) {
-  for (let i = 0; i < x; i++) {
-    const newArray = [];
-    newArray.push(Math.floor(Math.random() * 10));
+function giveMeRandom(n) {
+  if (typeof n !== "number") {
+    return "nessun numero";
   }
 }
 
